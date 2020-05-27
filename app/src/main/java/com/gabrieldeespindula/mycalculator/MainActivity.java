@@ -27,6 +27,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         this.mViewHolder.divisionButton = findViewById(R.id.division_button);
 
         this.mViewHolder.additionButton.setOnClickListener(this);
+
+        clearResult();
     }
 
     @SuppressLint("DefaultLocale")
@@ -48,6 +50,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         }
 
+    }
+    public void clearResult(){
+        this.mViewHolder.result.setText("");
     }
 
     private static class ViewHolder {
