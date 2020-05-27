@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if (v.getId() == R.id.addition_button) {
             if ("".equals(firstNumberString) || "".equals(secondNumberString)) {
-                Toast.makeText(this, "Informe um número!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Informe um número!", Toast.LENGTH_LONG).show();
             } else {
                 Double firstNumberDouble = Double.valueOf(firstNumberString);
                 Double secondNumberDouble = Double.valueOf(secondNumberString);

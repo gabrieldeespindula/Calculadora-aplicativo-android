@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="@string/calculator_version" />
+        android:text="@string/calculator_version"/>
 
 
     <LinearLayout
@@ -22,20 +22,20 @@
         android:orientation="horizontal">
 
         <EditText
-            android:id="@+id/first_number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginRight="20dp"
             android:layout_weight="1"
-            android:inputType="numberDecimal" />
+            android:inputType="numberDecimal"
+            android:id="@+id/first_number"/>
 
         <EditText
-            android:id="@+id/second_number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_weight="1"
-            android:inputType="numberDecimal" />
+            android:inputType="numberDecimal"
+            android:id="@+id/second_number"/>
     </LinearLayout>
 
     <LinearLayout
@@ -45,47 +45,49 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/addition_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:layout_weight="1"
-            android:text="+" />
+            android:text="+"
+            android:id="@+id/addition_button"/>
 
         <Button
-            android:id="@+id/subtraction_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:layout_weight="1"
-            android:text="-" />
+            android:text="-"
+            android:id="@+id/subtraction_button"/>
 
         <Button
-            android:id="@+id/multiplication_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:layout_weight="1"
-            android:text="x" />
+            android:text="x"
+            android:id="@+id/multiplication_button"/>
 
         <Button
-            android:id="@+id/division_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:layout_weight="1"
-            android:text="÷" />
+            android:text="÷"
+            android:id="@+id/division_button"/>
 
     </LinearLayout>
 
     <TextView
-        android:id="@+id/result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="@string/result"
         android:layout_gravity="center"
         android:layout_marginTop="100dp"
-        android:text="@string/result"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        />
+
+
 
 
 </LinearLayout>

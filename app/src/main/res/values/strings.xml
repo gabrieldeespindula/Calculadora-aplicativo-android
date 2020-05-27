@@ -2,4 +2,5 @@
     <string name="app_name">Calculator</string>
     <string name="calculator_version">Calculadora - v0.1</string>
     <string name="result">resultado</string>
+    <string name="informe_um_numero">"Informe um número!"</string>
 </resources>
