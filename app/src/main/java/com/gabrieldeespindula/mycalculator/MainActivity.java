@@ -27,6 +27,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         this.mViewHolder.divisionButton = findViewById(R.id.division_button);
 
         this.mViewHolder.additionButton.setOnClickListener(this);
+        this.mViewHolder.subtractionButton.setOnClickListener(this);
+        this.mViewHolder.multiplicationButton.setOnClickListener(this);
+        this.mViewHolder.divisionButton.setOnClickListener(this);
+
 
         clearResult();
     }
@@ -45,12 +49,39 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Double result = firstNumberDouble + secondNumberDouble;
                 this.mViewHolder.result.setText(String.format("%.2f", result));
             }
-
-
-
         }
-
+        if (v.getId() == R.id.subtraction_button){
+            if ("".equals(firstNumberString) || "".equals(secondNumberString)) {
+                Toast.makeText(this, "Informe um número!", Toast.LENGTH_SHORT).show();
+            } else {
+                Double firstNumberDouble = Double.valueOf(firstNumberString);
+                Double secondNumberDouble = Double.valueOf(secondNumberString);
+                Double result = firstNumberDouble - secondNumberDouble;
+                this.mViewHolder.result.setText(String.format("%.2f", result));
+            }
+        }
+        if (v.getId() == R.id.multiplication_button){
+            if ("".equals(firstNumberString) || "".equals(secondNumberString)) {
+                Toast.makeText(this, "Informe um número!", Toast.LENGTH_SHORT).show();
+            } else {
+                Double firstNumberDouble = Double.valueOf(firstNumberString);
+                Double secondNumberDouble = Double.valueOf(secondNumberString);
+                Double result = firstNumberDouble * secondNumberDouble;
+                this.mViewHolder.result.setText(String.format("%.2f", result));
+            }
+        }
+        if (v.getId() == R.id.division_button){
+            if ("".equals(firstNumberString) || "".equals(secondNumberString)) {
+                Toast.makeText(this, "Informe um número!", Toast.LENGTH_SHORT).show();
+            } else {
+                Double firstNumberDouble = Double.valueOf(firstNumberString);
+                Double secondNumberDouble = Double.valueOf(secondNumberString);
+                Double result = firstNumberDouble / secondNumberDouble;
+                this.mViewHolder.result.setText(String.format("%.2f", result));
+            }
+        }
     }
+
     public void clearResult(){
         this.mViewHolder.result.setText("");
     }
