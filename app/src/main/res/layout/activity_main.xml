@@ -85,7 +85,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="100dp"
         android:text="@string/result"
-        android:textSize="20sp" />
+        android:textSize="30sp" />
 
 
 </LinearLayout>
